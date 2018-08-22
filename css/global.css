@@ -18,7 +18,14 @@ body {
 }
 
 .footer {
-	padding: .5em .25em 0;
+	padding-top: .5em;
+}
+.footer__left, .footer__right {
+	width: calc(50% - .15em );
+	display: inline-block;
+	box-sizing: border-box;
+}
+.footer__right {
 	text-align: right;
 }
 
@@ -66,6 +73,7 @@ body {
     cursor: pointer;
 	font-size: 2em;
 	padding: .25em .5em;
+	margin: 0;
 }
 .button:hover {
     box-shadow: 2px 2px 3px #afafaf;
@@ -88,6 +96,10 @@ pre {
 h2, h3, h4 {
 	font-family: fantasy;
 	text-decoration: underline;
+}
+.copyright, .copyright a {
+	font-size: small;
+	color: #666;
 }
 
 .hidden {
