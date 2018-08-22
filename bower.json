@@ -18,9 +18,9 @@
       "includePackageNameInInstallPath": false
     },
     "path": {
-      "js": "scripts",
-      "/(css|map)$/": "css",
-      "/(eot|svg|ttf|woff|woff2)$/": "css/fonts"
+      "js": "scripts/dist",
+      "/(css|map)$/": "css/dist",
+      "/(eot|svg|ttf|woff|woff2)$/": "css/fonts/dist"
     },
     "sources": {
       "jquery": [
@@ -30,7 +30,7 @@
 		  "bower_components/jquery.cookie/jquery.cookie.js"
       ],
 	  "knockout": [
-		  "bower_components/knockout/build/output/knockout-latest.js"
+		  "bower_components/knockout/dist/knockout.js"
       ]
     }
   },

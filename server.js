@@ -1,4 +1,5 @@
 var liveServer = require("live-server");
+var bower = require("bower-installer");
  
 var params = {
     port: 8080, // Set the server port. Defaults to 8080.
@@ -12,4 +13,6 @@ var params = {
     //logLevel: 2, // 0 = errors only, 1 = some, 2 = lots
     //middleware: [function(req, res, next) { next(); }] // Takes an array of Connect-compatible middleware that are injected into the server middleware stack
 };
+
+
 liveServer.start(params);
