@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		
+		<title>Thunderstone Quest Randomizer</title>
+		<link href="css/global.css" type="text/css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Diplomata+SC|Dosis" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="menu">
+				<div class="menu__item">
+					<h2>Generate Play Set</h2>
+					<p>Get a raondom selection of cards using the avilable sets and configured options.</p>
+				</div>
+				<div class="menu__item">
+					<h2>Configuration</h2>
+					<p>Select the sets you own and other options. These will be stored in a cookie.</p>
+				</div>
+				<div class="menu__item">
+					<h2>View Card Data</h2>
+					<p>View all the card details.</p>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="panel">
+			<div class="panel__body hidden" data-bind="visible: View() == 'Generate Play Set'">
+		
+					<div class="playset">
+						<h3>Dungeon</h3>
+						<div class="playset__row" data-bind="with: PlaySet.Guardian()">
+							<label>Guardian</label> <span data-bind="text: Name"></span>
+						</div>
+
+						<div class="playset__row" data-bind="with: PlaySet.Monster1()">
+							<label>Monster: Level 1</label> <span data-bind="text: `${Name} \(${Level})`"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.Monster2()">
+							<label>Monster: Level 2</label> <span data-bind="text: `${Name} \(${Level})`"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.Monster3()">
+							<label>Monster: Level 3</label> <span data-bind="text: `${Name} \(${Level})`"></span>
+						</div>
+						
+						<div class="playset__row" data-bind="with: PlaySet.Dungeon1()">
+							<label>Dungeon: Level 1</label> <span data-bind="text: `${Name} \(${Level})`"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.Dungeon2()">
+							<label>Dungeon: Level 2</label> <span data-bind="text: `${Name} \(${Level})`"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.Dungeon3()">
+							<label>Dungeon: Level 3</label> <span data-bind="text: `${Name} \(${Level})`"></span>
+						</div>
+		
+						<h3>Village</h3>
+						<div class="playset__row" data-bind="with: PlaySet.ClericHero()">
+							<label>Hero: Cleric</label> <span data-bind="text: Name"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.FighterHero()">
+							<label>Hero: Fighter</label> <span data-bind="text: Name"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.RogueHero()">
+							<label>Hero: Rogue</label> <span data-bind="text: Name"></span>
+						</div>
+						<div class="playset__row" data-bind="with: PlaySet.WizardHero()">
+							<label>Hero: Wizard</label> <span data-bind="text: Name"></span>
+						</div>
+						
+						<div data-bind="visible: Options.GroupItemsByType()">
+							<h4>Items</h4>
+							<div data-bind="foreach: PlaySet.Weapons">
+								<div class="playset__row">
+									<label data-bind="text: Type">Card</label> <span data-bind="text: Name"></span>
+								</div>
+							</div>
+							<div data-bind="foreach: PlaySet.Spells">
+								<div class="playset__row">
+									<label data-bind="text: Type">Card</label> <span data-bind="text: Name"></span>
+								</div>
+							</div>
+							<div data-bind="foreach: PlaySet.Items">
+								<div class="playset__row">
+									<label data-bind="text: Type">Card</label> <span data-bind="text: Name"></span>
+								</div>
+							</div>
+							
+						</div>
+						<h4 data-bind="visible: !Options.GroupItemsByType()">Items</h4>
+						<div data-bind="visible: !Options.GroupItemsByType(), foreach: PlaySet.Cards" >
+							<div class="playset__row">
+								<label data-bind="text: Type">Card</label> <span data-bind="text: Name"></span>
+							</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class="panel__body hidden" data-bind="visible: View() == 'Configuration'">
+				<h3>Card Sets</h3>
+				<ul class="cardsets" data-bind="foreach: CardSets">
+					<li class="cardsets__item">
+						<input type="checkbox" name="cardset" data-bind="checked: InCollection, attr: { id: 'cardset_'+$index() }" />
+						<label data-bind="text: Name, attr: { for: 'cardset_'+$index() }"></span>
+					</li>
+				</ul>
+		
+				<h3>Options</h3>
+				<ul class="options">
+					<li class="options__items">
+						<input type="checkbox" name="GroupItemsByType" data-bind="checked: Options.GroupItemsByType" id="GroupItemsByType">
+						<label for="GroupItemsByType">Group Items By Type</label>
+					</li>
+					<li class="options__items">
+						<input type="checkbox" name="IgnoreMonsterLevel" data-bind="checked: Options.IgnoreMonsterLevel" id="IgnoreMonsterLevel">
+						<label for="IgnoreMonsterLevel">Ignore Monster Level</label>
+					</li>
+					<li class="options__items">
+						<input type="checkbox" name="IgnoreDungeonLevel" data-bind="checked: Options.IgnoreDungeonLevel" id="IgnoreDungeonLevel">
+						<label for="IgnoreDungeonLevel">Ignore Dungeon Level</label>
+					</li>
+				</ul>
+			</div>
+		
+			<div class="panel__body hidden" data-bind="visible: View() == 'View Card Data'">
+				<h3>Card Details by Quest</h3>
+				<pre data-bind="text: CardSetsAsString"></pre>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<button class="button button__generate" disabled data-bind="attr: {disabled: !CardSets}">Generate</button>
+		</footer>
+
+		<script src="scripts/jquery.min.js" type="text/javascript"></script>
+		<script src="scripts/jquery.cookie.js" type="text/javascript"></script>
+		<script src="scripts/knockout-latest.js" type="text/javascript"></script>
+		<script src="scripts/global.js" type="text/javascript"></script>
+	</body>
+</html>

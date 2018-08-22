@@ -1,0 +1,15 @@
+{
+  "name": "thunderstone-quest",
+  "version": "1.0.0",
+  "description": "Thunderstone Quest Randomizer",
+  "main": "global.js",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

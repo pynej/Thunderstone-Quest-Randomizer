@@ -1,0 +1,253 @@
+{
+  "CardSets" : [
+    {
+      "Name" : "A Mirror in the Dark",
+      "Monsters" : [
+		  { "Name" : "Goblin Grunts", "Level": 1 },
+		  { "Name" : "Kobold Skirmishers", "Level": 1 },
+		  { "Name" : "Hobgoblin Brutes", "Level": 2 },
+		  { "Name" : "Spider Terrors", "Level": 2 },
+		  { "Name" : "Ancient Adventurers", "Level": 3 },
+		  { "Name" : "Goblin King's Guard", "Level": 3 }
+       ],
+      "Dungeons" : [
+		  { "Name" : "Abandoned Gate", "Level": 1 },
+		  { "Name" : "Mine", "Level": 1 },
+		  { "Name" : "Sunken Well", "Level": 2 },
+		  { "Name" : "Crypt", "Level": 2 },
+		  { "Name" : "Throne Room", "Level": 3 },
+		  { "Name" : "Vault", "Level": 3 }
+      ],
+      "Guardians" : [
+		  { "Name": "Smorga the Queen" }
+      ],
+      "Heros" : [
+		  { "Name" : "Hawkswood", "Class": [ "Rogue" ] },
+		  { "Name" : "Scathian", "Class": [ "Rogue", "Wizard" ] },
+		  { "Name" : "Pylorian", "Class": [ "Wizard" ] },
+		  { "Name" : "Stormhand", "Class": [ "Fighter" ] },
+		  { "Name" : "Gorlandor", "Class": [ "Fighter" ] },
+		  { "Name" : "Silverhelm", "Class": [ "Cleric", "Fighter" ] }
+      ],
+      "Items" : [
+		  { "Name" : "Hammer", "Type": "Weapon" },
+		  { "Name" : "Shortbow", "Type": "Weapon" },
+		  { "Name" : "Shortsword", "Type": "Weapon" },
+		  { "Name" : "Shortspear", "Type": "Weapon" },
+		  { "Name" : "Maul", "Type": "Weapon" },
+		  { "Name" : "Moonlight", "Type": "Spell" },
+		  { "Name" : "Fireball", "Type": "Spell" },
+		  { "Name" : "Magic Missile", "Type": "Spell" },
+		  { "Name" : "Future Vision", "Type": "Spell" },
+		  { "Name" : "Amulet of Infravision", "Type": "Item" },
+		  { "Name" : "Gem of Healing", "Type": "Item" },
+		  { "Name" : "Tome of Knowledge", "Type": "Item" }
+      ]
+    },
+    {
+      "Name" : "At the Foundations of the World",
+      "Monsters" : [
+		  { "Name" : "Air Servitors", "Level": 1 },
+		  { "Name" : "Water Servitors", "Level": 1 },
+		  { "Name" : "Fire Servitors", "Level": 2 },
+		  { "Name" : "Earth Servitors", "Level": 2 },
+		  { "Name" : "Abyssal Founders", "Level": 3 },
+		  { "Name" : "Divine Founders", "Level": 3 }
+       ],
+      "Dungeons" : [
+		  { "Name" : "Water Temple", "Level": 1 },
+		  { "Name" : "Air Temple", "Level": 1 },
+		  { "Name" : "Fire Temple", "Level": 2 },
+		  { "Name" : "Earth Temple", "Level": 2 },
+		  { "Name" : "Abyssal Temple", "Level": 3 },
+		  { "Name" : "Celestial Temple", "Level": 3 }
+      ],
+      "Guardians" : [
+		  { "Name": "Miricelle, Scion Defender" }
+      ],
+      "Heros" : [
+		  { "Name" : "Grimwolf", "Class": [ "Fighter" ] },
+		  { "Name" : "Stormskull", "Class": [ "Wizard" ] },
+		  { "Name" : "Honormain", "Class": [ "Cleric" ] },
+		  { "Name" : "Darkrend", "Class": [ "Wizard" ] },
+		  { "Name" : "Moonblades", "Class": [ "Fighter", "Rogue" ] },
+		  { "Name" : "Jadress", "Class": [ "Rogue" ] }
+	  ],
+      "Items" : [
+		  { "Name" : "Two-Handed Sword", "Type": "Weapon" },
+		  { "Name" : "Crossbow", "Type": "Weapon" },
+		  { "Name" : "Broadsword", "Type": "Weapon" },
+		  { "Name" : "Flail", "Type": "Weapon" },
+		  { "Name" : "Tempest", "Type": "Spell" },
+		  { "Name" : "Mirror Image", "Type": "Spell" },
+		  { "Name" : "Death Pact", "Type": "Spell" },
+		  { "Name" : "True Seeing", "Type": "Spell" },
+		  { "Name" : "Daramere's Cloak", "Type": "Item" },
+		  { "Name" : "Ring of Proficiency", "Type": "Item" },
+		  { "Name" : "Damilu Huskie", "Type": "Item" },
+		  { "Name" : "Potion of Light", "Type": "Item" }
+      ]
+    },
+    {
+      "Name" : "Bandits of Black Rock",
+      "Monsters" : [
+		  { "Name" : "Bandits of Black Rock", "Level": 1 }
+	  ],
+      "Dungeons" : [],
+	  "Guardians" : [],
+      "Heros" : [
+		  { "Name" : "Edlin", "Class": [ "Fighter" ] }
+	  ],
+      "Items" : [
+		  { "Name" : "Rapier", "Type": "Weapon" },
+		  { "Name" : "Dark Fire Touch", "Type": "Spell" },
+		  { "Name" : "Scionic Annals", "Type": "Item" }
+      ]
+    },
+    {
+      "Name" : "Ripples in Time",
+      "Monsters" : [
+		  { "Name" : "Gnoll Raiders", "Level": 1 },
+		  { "Name" : "Doomknights", "Level": 1 },
+		  { "Name" : "Torments", "Level": 2 },
+		  { "Name" : "Minions of Chaos", "Level": 2 },
+		  { "Name" : "Ancient Wyrms", "Level": 3 },
+		  { "Name" : "Ancient Protectors", "Level": 3 }
+       ],
+      "Dungeons" : [
+		  { "Name" : "Gate Cavern", "Level": 1 },
+		  { "Name" : "Dangerous Passageway", "Level": 2 },
+		  { "Name" : "Fire Chasm", "Level": 3 }
+      ],
+      "Guardians" : [
+		  { "Name": "Death Sentinel" }
+      ],
+      "Heros" : [
+		  { "Name" : "Veris", "Class": [ "Wizard" ] },
+		  { "Name" : "Terakian", "Class": [ "Cleric", "Fighter" ] },
+		  { "Name" : "Aird", "Class": [ "Rogue" ] },
+		  { "Name" : "Dunardic", "Class": [ "Fighter" ] },
+		  { "Name" : "Arcanian", "Class": [ "Wizard" ] },
+		  { "Name" : "Regian", "Class": [ "Cleric" ] }
+	  ],
+      "Items" : [
+		  { "Name" : "Magi Staff", "Type": "Weapon" },
+		  { "Name" : "Longspear", "Type": "Weapon" },
+		  { "Name" : "Cursed Mace", "Type": "Weapon" },
+		  { "Name" : "King's Sword", "Type": "Weapon" },
+		  { "Name" : "Mind Control", "Type": "Spell" },
+		  { "Name" : "Creeping Death", "Type": "Spell" },
+		  { "Name" : "Frost Bolt", "Type": "Spell" },
+		  { "Name" : "Summon Storm", "Type": "Spell" },
+		  { "Name" : "Amulet of Power", "Type": "Item" },
+		  { "Name" : "Lightstone Gem", "Type": "Item" },
+		  { "Name" : "Ring of Spell Storing", "Type": "Item" },
+		  { "Name" : "Nature's Amulet", "Type": "Item" }
+      ]
+    },
+    {
+      "Name" : "Risen from the Mire",
+      "Monsters" : [
+		  { "Name" : "Ensnaring Vines", "Level": 1 },
+		  { "Name" : "Bog Zombies", "Level": 1 },
+		  { "Name" : "Chaos Lizards", "Level": 2 },
+		  { "Name" : "Moor Skeletons", "Level": 2 },
+		  { "Name" : "Marsh Trolls", "Level": 3 },
+		  { "Name" : "Swamp Spirits", "Level": 3 }
+       ],
+      "Dungeons" : [
+		  { "Name" : "The Servant's Tombs", "Level": 1 },
+		  { "Name" : "Alchemy Chamber", "Level": 1 },
+		  { "Name" : "Bog", "Level": 2 },
+		  { "Name" : "Sunken Graveyard", "Level": 2 },
+		  { "Name" : "Blood Alter Room", "Level": 3 },
+		  { "Name" : "The Lich's Tomb", "Level": 3 }
+      ],
+      "Guardians" : [
+		  { "Name": "Baalok, the Flesh Weaver" }
+      ],
+      "Heros" : [
+		  { "Name" : "Markennan", "Class": [ "Fighter" ] },
+		  { "Name" : "Baharan", "Class": [ "Cleric" ] },
+		  { "Name" : "Regalen", "Class": [ "Wizard" ] },
+		  { "Name" : "Nimblefingers", "Class": [ "Rogue" ] },
+		  { "Name" : "Linsha", "Class": [ "Fighter" ] },
+		  { "Name" : "Darameric", "Class": [ "Cleric", "Wizard" ] }
+	  ],
+      "Items" : [
+		  { "Name" : "Battle Axe", "Type": "Weapon" },
+		  { "Name" : "Bommerang", "Type": "Weapon" },
+		  { "Name" : "Crystal Dagger", "Type": "Weapon" },
+		  { "Name" : "Holy Mace", "Type": "Weapon" },
+		  { "Name" : "Vampiric Touch", "Type": "Spell" },
+		  { "Name" : "Charm Monster", "Type": "Spell" },
+		  { "Name" : "Arcane Aura", "Type": "Spell" },
+		  { "Name" : "Enchant Weapons", "Type": "Spell" },
+		  { "Name" : "Ring of Learning", "Type": "Item" },
+		  { "Name" : "Crystal of Scrying", "Type": "Item" },
+		  { "Name" : "Holy Symbol", "Type": "Item" },
+		  { "Name" : "Potion of Stamina", "Type": "Item" }
+      ]
+    },
+    {
+      "Name" : "Total Eclipse of the Sun",
+      "Monsters" : [
+		  { "Name" : "Woodland Sprites", "Level": 1 },
+		  { "Name" : "Twisted Creatures", "Level": 1 },
+		  { "Name" : "Foundational Keepers", "Level": 2 },
+		  { "Name" : "Corrupted Elves", "Level": 2 },
+		  { "Name" : "Treefolk", "Level": 3 },
+		  { "Name" : "Corrupted Centaurs", "Level": 3 }
+       ],
+      "Dungeons" : [
+		  { "Name" : "Ominous Looking Road", "Level": 1 },
+		  { "Name" : "Fairy Meadow", "Level": 1 },
+		  { "Name" : "Tree House", "Level": 2 },
+		  { "Name" : "Hollow Tree", "Level": 2 },
+		  { "Name" : "Elven Ruins", "Level": 3 },
+		  { "Name" : "Elven Outpost", "Level": 3 }
+      ],
+      "Guardians" : [
+		  { "Name": "Guardian of the Sun" }
+      ],
+      "Heros" : [
+		  { "Name" : "Avania", "Class": [ "Cleric" ] },
+		  { "Name" : "Brimstone", "Class": [ "Rogue" ] },
+		  { "Name" : "Sephilest", "Class": [ "Fighter" ] },
+		  { "Name" : "Felin", "Class": [ "Cleric", "Wizard" ] },
+		  { "Name" : "Ehrlingal", "Class": [ "Rogue" ] },
+		  { "Name" : "Gendarme", "Class": [ "Wizard" ] }
+	  ],
+      "Items" : [
+		  { "Name" : "Longsword", "Type": "Weapon" },
+		  { "Name" : "Quarterstaff", "Type": "Weapon" },
+		  { "Name" : "Punching Dagger", "Type": "Weapon" },
+		  { "Name" : "Longbow", "Type": "Weapon" },
+		  { "Name" : "Arcane Touch", "Type": "Spell" },
+		  { "Name" : "Nature's Fury", "Type": "Spell" },
+		  { "Name" : "Lightning Bolt", "Type": "Spell" },
+		  { "Name" : "Consecration", "Type": "Spell" },
+		  { "Name" : "Wand of Light", "Type": "Item" },
+		  { "Name" : "Elven Ring", "Type": "Item" },
+		  { "Name" : "Strength Gauntlets", "Type": "Item" },
+		  { "Name" : "Headband of Intellect", "Type": "Item" }
+      ]
+    },
+    {
+      "Name" : "Promotional Cards",
+      "Monsters" : [],
+      "Dungeons" : [],
+	  "Guardians" : [],
+      "Heros" : [
+		  { "Name" : "Stalker", "Class": [ "Rogue" ] },
+		  { "Name" : "The Yellow Knight", "Class": [ "Fighter" ] },
+		  { "Name" : "Outlands", "Class": [ "Fighter" ] }
+	  ],
+      "Items" : [
+		  { "Name": "Hand Axe", "Type": "Weapon" },
+		  { "Name" : "Form of the Juggernaut", "Type": "Spell" },
+		  { "Name" : "Necklace of Dawn", "Type": "Item" }
+      ]
+    }
+  ]
+}

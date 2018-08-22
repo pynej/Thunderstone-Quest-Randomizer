@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jquery.cookie": "^1.4.1",
+    "knockout": "^3.4.2"
+  },
+  "description": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "options": {
+      "includePackageNameInInstallPath": false
+    },
+    "path": {
+      "js": "scripts",
+      "/(css|map)$/": "css",
+      "/(eot|svg|ttf|woff|woff2)$/": "css/fonts"
+    },
+    "sources": {
+      "jquery": [
+		  "bower_components/jquery/dist/jquery.min.js"
+      ],
+	  "jquery.cookie": [
+		  "bower_components/jquery.cookie/jquery.cookie.js"
+      ],
+	  "knockout": [
+		  "bower_components/knockout/build/output/knockout-latest.js"
+      ]
+    }
+  },
+  "license": "MIT",
+  "main": "",
+  "name": "magewarsdeckbuilder",
+  "private": true
+}
