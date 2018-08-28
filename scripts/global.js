@@ -61,9 +61,12 @@ function SetsViewModel(data) {
 		Monster1: ko.observable(""),
 		Monster2: ko.observable(""),
 		Monster3: ko.observable(""),
-		Dungeon1: ko.observable(""),
-		Dungeon2: ko.observable(""),
-		Dungeon3: ko.observable(""),
+		Dungeon1a: ko.observable(""),
+                Dungeon1b: ko.observable(""),
+		Dungeon2a: ko.observable(""),
+                Dungeon2b: ko.observable(""),
+		Dungeon3a: ko.observable(""),
+                Dungeon3b: ko.observable(""),
 		ClericHero: ko.observable(""),
 		FighterHero: ko.observable(""),
 		RogueHero: ko.observable(""),
@@ -124,16 +127,22 @@ function SetsViewModel(data) {
 		// Get Dungeons
 		if(self.Options.IgnoreDungeonLevel()) {
 			var dungeons = shuffleArray(self.Dungeons());
-			self.PlaySet.Dungeon1(dungeons.pop());
-			self.PlaySet.Dungeon2(dungeons.pop());
-			self.PlaySet.Dungeon3(dungeons.pop());
+			self.PlaySet.Dungeon1a(dungeons.pop());
+			self.PlaySet.Dungeon1b(dungeons.pop());
+			self.PlaySet.Dungeon2a(dungeons.pop());
+			self.PlaySet.Dungeon2b(dungeons.pop());
+			self.PlaySet.Dungeon3a(dungeons.pop());
+			self.PlaySet.Dungeon3b(dungeons.pop());
 		} else {
 			var dungeons1 = shuffleArray(self.Dungeons().filter(onProperty('Level', '1')));
 			var dungeons2 = shuffleArray(self.Dungeons().filter(onProperty('Level', '2')));
 			var dungeons3 = shuffleArray(self.Dungeons().filter(onProperty('Level', '3')));
-			self.PlaySet.Dungeon1(dungeons1.pop());
-			self.PlaySet.Dungeon2(dungeons2.pop());
-			self.PlaySet.Dungeon3(dungeons3.pop());
+			self.PlaySet.Dungeon1a(dungeons1.pop());
+			self.PlaySet.Dungeon1b(dungeons1.pop());
+			self.PlaySet.Dungeon2a(dungeons2.pop());
+			self.PlaySet.Dungeon2b(dungeons2.pop());
+			self.PlaySet.Dungeon3a(dungeons3.pop());
+			self.PlaySet.Dungeon3b(dungeons3.pop());
 		}
 		
 		// Get Items
